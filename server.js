@@ -10,7 +10,7 @@ const contactRoute = require('./routes/contact');
 const app = express();
 app.use(cors(
   {
-    origin: 'https://sa-club-frontend.vercel.app',
+    origin: ['https://sa-club-frontend.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true
   }
