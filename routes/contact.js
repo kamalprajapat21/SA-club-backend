@@ -1,7 +1,7 @@
 // backend/routes/contact.js
 const express = require('express');
 const router = express.Router();
-const transporter = require('../config/transporter'); // Adjust if your transporter file is elsewhere
+const transporter = require('../config/transporter'); // make sure this path is correct
 
 router.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
